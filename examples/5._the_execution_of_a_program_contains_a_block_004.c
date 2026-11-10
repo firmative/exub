@@ -55,9 +55,7 @@ int watcher_thread(void *arg) {
             read_false++;
         }
     }
-    printf("[Watcher Thread] Sampled %d 'true' and %d 'false' states.
-",
-           read_true, read_false);
+    printf("[Watcher Thread] Sampled %d 'true' and %d 'false' states.", read_true, read_false);
     return 0;
 }
 
