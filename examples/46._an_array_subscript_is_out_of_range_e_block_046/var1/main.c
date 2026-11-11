@@ -2,10 +2,9 @@
 #include <string.h>
 #include <stddef.h>
 
-constexpr size_t BUFFER_SIZE 128u  // Define the fixed buffer size
+constexpr size_t BUFFER_SIZE = 128u;  // Define the fixed buffer size
 
 int main(int argc, char *argv[]) {
-    // Fixed-length buffer
     char buffer[BUFFER_SIZE];
 
     // Check if a string was provided on the command line
