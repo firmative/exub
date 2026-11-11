@@ -1,12 +1,13 @@
 /*
  * C99 Data Race & Race Condition Demonstration
  * Standard: ISO C99 (using <pthread.h>)
- * Compile: gcc -std=c99 -fsanitize=thread -pthread -O2 -g main.c -o race
+ * Compile: 
  */
 
 #include <stdio.h>
 #include <stdbool.h>
 #include <pthread.h>
+#include <string.h>
 
 // 1. Shared state: Non-atomic boolean
 // Accessing this concurrently without synchronization is UNDEFINED BEHAVIOR.
