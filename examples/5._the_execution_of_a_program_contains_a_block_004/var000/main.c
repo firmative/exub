@@ -60,7 +60,7 @@ int watcher_thread(void *arg) {
 }
 
 int main(void) {
-    puts("=== C23 Concurrent Data Race Demonstration ===);
+    puts("=== C23 Concurrent Data Race Demonstration ===");
     init_flag();
 
     constexpr unsigned int total_expected_toggles = NUM_WORKERS * TOGGLES_PER_WORKER;
@@ -104,8 +104,7 @@ int main(void) {
     if (flag != false) {
         puts(">>> RACE CONDITION DETECTED! Value is TRUE due to lost updates! <<<");
     } else {
-        puts("Note: Even if it happened to land on false by coincidence,\n"
-               "ThreadSanitizer flags the UB data race immediately.");
+        puts("Landed on false by coincidence,");
     }
 
     return 0;
